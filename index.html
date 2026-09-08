@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Password Generator</h2>
+
+        <p>Generate random Password</p>
+
+
+        <div class="requirements">
+
+            <h3>Requirements</h3>
+
+
+            <div class="requirements-row">
+                <label for="uppercase" class="requirement">
+                    A-Z
+                </label>
+
+                <input type="checkbox" id="uppercase">
+            </div>
+
+
+            <div class="requirements-row">
+                <label for="lowercase" class="requirement">
+                    a-z
+                </label>
+
+                <input type="checkbox" id="lowercase">
+            </div>
+
+
+            <div class="requirements-row">
+                <label for="number" class="requirement">
+                    0-9
+                </label>
+
+                <input type="checkbox" id="number">
+            </div>
+
+
+            <div class="requirements-row">
+                <label for="charecter" class="requirement">
+                    !@#$
+                </label>
+
+                <input type="checkbox" id="charecter">
+            </div>
+
+
+            <!-- Password Length -->
+
+            <label for="range" class="requirement">
+                Password Length:
+                <span id="livelength">8</span>
+            </label>
+
+            <input
+                type="range"
+                min="6"
+                max="18"
+                step="1"
+                value="8"
+                id="range"
+            >
+
+        </div>
+
+
+        <!-- Submit Button -->
+
+        <div class="submit-btn">
+
+            <button id="Submit">
+                Submit
+            </button>
+
+        </div>
+
+
+        <!-- Password Output -->
+
+        <div class="password">
+
+            <h3>Your Password is</h3>
+
+            <input
+                type="text"
+                placeholder="Your Password"
+                id="password"
+                readonly
+            >
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
